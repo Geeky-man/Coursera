@@ -1,0 +1,2 @@
+Keep all three files in same folder to view output.
+Run this codes in PHP server.

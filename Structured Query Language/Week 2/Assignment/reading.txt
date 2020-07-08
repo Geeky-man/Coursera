@@ -1,0 +1,26 @@
+NOTE:
+	create all this in "phpMyadmin". In this create one database and follow the following-
+------------------------------------------------------------------------------------------------------
+STEP 1:
+
+CREATE TABLE 'Ages' (
+  `name` varchar(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `age` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+-----------------------------------------------------------------------------------------------------
+STEP 2:
+
+DELETE FROM Ages;
+INSERT INTO Ages (name, age) VALUES ('Zahra', 34);
+INSERT INTO Ages (name, age) VALUES ('Olufunke', 23);
+INSERT INTO Ages (name, age) VALUES ('Choire', 38);
+INSERT INTO Ages (name, age) VALUES ('Makenna', 32);
+INSERT INTO Ages (name, age) VALUES ('Ula', 16);
+INSERT INTO Ages (name, age) VALUES ('Garren', 40);
+------------------------------------------------------------------------------------------------------
+STEP 3:
+
+SELECT sha1(CONCAT(name,age)) AS X FROM Ages ORDER BY X
+-------------------------------------------------------------------------------------------------------
+FOR OUTPUT:
+copy the only first line in option and paste into auto grader.
